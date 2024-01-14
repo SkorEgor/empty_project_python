@@ -7,7 +7,7 @@ class GuiProgram(Ui_Dialog):
 
     def __init__(self, dialog: QtWidgets.QDialog) -> None:
         """ Вызывается при создании нового объекта класса """
-        # Создаем окно
+        # Создание окна
         Ui_Dialog.__init__(self)
-        # Устанавливаем пользовательский интерфейс
+        # Установка пользовательского интерфейс
         self.setupUi(dialog)
