@@ -1,14 +1,13 @@
 from gui import Ui_Dialog
+from PyQt5 import QtWidgets
 
 
-# КЛАСС АЛГОРИТМА ПРИЛОЖЕНИЯ
 class GuiProgram(Ui_Dialog):
+    """ Класс контроллер - интерпретирует действия пользователя """
 
-    def __init__(self, dialog):
-        # ПОЛЯ КЛАССА
-
-
-        # ДЕЙСТВИЯ ПРИ ВКЛЮЧЕНИИ
+    def __init__(self, dialog: QtWidgets.QDialog) -> None:
+        """ Вызывается при создании нового объекта класса """
         # Создаем окно
         Ui_Dialog.__init__(self)
-        self.setupUi(dialog)  # Устанавливаем пользовательский интерфейс
+        # Устанавливаем пользовательский интерфейс
+        self.setupUi(dialog)

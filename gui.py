@@ -15,13 +15,6 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(810, 572)
-        self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.plotWindow = QtWidgets.QWidget(Dialog)
-        self.plotWindow.setObjectName("plotWindow")
-        self.plotLayout = QtWidgets.QVBoxLayout(self.plotWindow)
-        self.plotLayout.setObjectName("plotLayout")
-        self.verticalLayout.addWidget(self.plotWindow)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
